@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Number_guessing_game {
 
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 		Scanner sc =  new Scanner(System.in);
 		 int num = 1 + (int)(100 * Math.random());
 		 
-		 int k = 5; //Maximum number of times one can try the game
+		 int k = 10;//Maximum number of times one can try the game
 		 
 		 System.out.println(
 				 "A number is chosen between 1 and 100:");
@@ -43,8 +43,11 @@ public class Number_guessing_game {
 		 sc.close();
 		 
 	}
-	public static void main(String[] args) {
-		Number_guessing_game();
+	public static void main1(String[] args) {
+		Number_guessing_game obj = new Number_guessing_game();
+		
+		obj.main(String[] args);
+		
 	}
 
 }
